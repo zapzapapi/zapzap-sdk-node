@@ -1,5 +1,5 @@
 {
-  "name": "@zapzapapi/sdk",
+  "name": "zapzapapi",
   "version": "0.1.0",
   "description": "Official TypeScript/Node SDK for the ZapZap API — connect and automate WhatsApp instances (send messages, media, buttons, lists, polls, manage groups and webhooks) over a simple, fully typed client.",
   "type": "module",

@@ -10,7 +10,7 @@ Official TypeScript/Node SDK for the [ZapZap API](https://zapzapapi.com) — con
 ## Installation
 
 ```bash
-npm install @zapzapapi/sdk
+npm install zapzapapi
 ```
 
 Requires Node.js 18 or newer (for native `fetch`).
@@ -18,7 +18,7 @@ Requires Node.js 18 or newer (for native `fetch`).
 ## Quickstart
 
 ```ts
-import { ZapZapClient } from "@zapzapapi/sdk";
+import { ZapZapClient } from "zapzapapi";
 
 const client = new ZapZapClient({
   apiKey: process.env.ZAPZAP_API_KEY!,
@@ -167,7 +167,7 @@ await client.instance(instanceId).raw("POST", "/send/location", {
 Every non-2xx response and every transport failure throws a `ZapZapError`.
 
 ```ts
-import { ZapZapError } from "@zapzapapi/sdk";
+import { ZapZapError } from "zapzapapi";
 
 try {
   await client.instances.create({ name: "taken-name" });
