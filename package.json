@@ -1,0 +1,54 @@
+{
+  "name": "@zapzapapi/sdk",
+  "version": "0.1.0",
+  "description": "Official TypeScript/Node SDK for the ZapZap API — connect and automate WhatsApp instances (send messages, media, buttons, lists, polls, manage groups and webhooks) over a simple, fully typed client.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "whatsapp",
+    "api",
+    "sdk",
+    "zapzap",
+    "whatsapp-api",
+    "whatsapp-sdk",
+    "messaging",
+    "chatbot",
+    "typescript"
+  ],
+  "author": "GM Solutions Hub LTDA <contato@zapzapapi.com>",
+  "license": "MIT",
+  "homepage": "https://zapzapapi.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zapzapapi/zapzap-sdk-node.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zapzapapi/zapzap-sdk-node/issues"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.43",
+    "typescript": "^5.6.0"
+  }
+}
